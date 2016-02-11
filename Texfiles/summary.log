@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.12.29)  4 FEB 2016 14:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.12.29)  11 FEB 2016 16:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1024,19 +1024,19 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 ) (./summary.aux)
 \openout1 = `summary.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 30.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 31.
  (/usr/share/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1211,164 +1211,120 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
 ) ABD: EveryShipout initializing macros
-LaTeX Info: Redefining \celsius on input line 30.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 30.
+LaTeX Info: Redefining \celsius on input line 31.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 31.
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 30.
-Package gensymb Info: Using \Omega for \ohm on input line 30.
+LaTeX Info: Redefining \ohm on input line 31.
+Package gensymb Info: Using \Omega for \ohm on input line 31.
 
 Package gensymb Warning: Not defining \micro.
 
 \c__siunitx_mathsf_int=\count196
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 30.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 31.
 (/usr/share/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 30.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 31.
  (/usr/share/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 30.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 31.
  (/usr/share/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 30.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 31.
  (/usr/share/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 30.
+(Font)              <10.95> on input line 31.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 30.
+(Font)              <8> on input line 31.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 30.
-LaTeX Font Info:    Try loading font information for U+msa on input line 30.
+(Font)              <6> on input line 31.
+LaTeX Font Info:    Try loading font information for U+msa on input line 31.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 30.
+LaTeX Font Info:    Try loading font information for U+msb on input line 31.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OT1+lmss on input line 30.
+LaTeX Font Info:    Try loading font information for OT1+lmss on input line 31.
  (/usr/share/texmf-dist/tex/latex/lm/ot1lmss.fd
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 \c__siunitx_mathtt_int=\count197
-LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 30.
+LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 31.
  (/usr/share/texmf-dist/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) </home/thiele/Documents/Physik/HiWi/WW/Plots/WW_snapshot2.png, id=4, 671.50874pt x 837.1275pt>
-File: /home/thiele/Documents/Physik/HiWi/WW/Plots/WW_snapshot2.png Graphic file (type png)
- <use /home/thiele/Documents/Physik/HiWi/WW/Plots/WW_snapshot2.png>
-Package pdftex.def Info: /home/thiele/Documents/Physik/HiWi/WW/Plots/WW_snapshot2.png used on input line 33.
-(pdftex.def)             Requested size: 347.92163pt x 433.72488pt.
- </home/thiele/Documents/Physik/HiWi/WW/Plots/polar_rates_structure.pdf, id=5, 1292.16847pt x 779.60553pt>
-File: /home/thiele/Documents/Physik/HiWi/WW/Plots/polar_rates_structure.pdf Graphic file (type pdf)
- <use /home/thiele/Documents/Physik/HiWi/WW/Plots/polar_rates_structure.pdf>
-Package pdftex.def Info: /home/thiele/Documents/Physik/HiWi/WW/Plots/polar_rates_structure.pdf used on input line 40.
-(pdftex.def)             Requested size: 347.92163pt x 209.9134pt.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 33--43
+
+ []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 45--69
 
-</home/thiele/Documents/Physik/HiWi/WW/Plots/bonded_rates_matrix.pdf, id=6, 722.7pt x 722.7pt>
-File: /home/thiele/Documents/Physik/HiWi/WW/Plots/bonded_rates_matrix.pdf Graphic file (type pdf)
- <use /home/thiele/Documents/Physik/HiWi/WW/Plots/bonded_rates_matrix.pdf>
-Package pdftex.def Info: /home/thiele/Documents/Physik/HiWi/WW/Plots/bonded_rates_matrix.pdf used on input line 47.
-(pdftex.def)             Requested size: 347.92163pt x 347.91762pt.
+ []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 70--76
 
-</home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_19AZU.pdf, id=7, 722.7pt x 433.62pt>
+ []
+
+</home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_19AZU.pdf, id=4, 722.7pt x 433.62pt>
 File: /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_19AZU.pdf Graphic file (type pdf)
  <use /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_19AZU.pdf>
-Package pdftex.def Info: /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_19AZU.pdf used on input line 56.
+Package pdftex.def Info: /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_19AZU.pdf used on input line 84.
 (pdftex.def)             Requested size: 347.92163pt x 208.75056pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-</home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_17VAL_18TYR.pdf, id=8, 722.7pt x 433.62pt>
+</home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_7GLU_8AHA_9ARG.pdf, id=5, 722.7pt x 433.62pt>
+File: /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_7GLU_8AHA_9ARG.pdf Graphic file (type pdf)
+ <use /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_7GLU_8AHA_9ARG.pdf>
+Package pdftex.def Info: /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_7GLU_8AHA_9ARG.pdf used on input line 93.
+(pdftex.def)             Requested size: 347.92163pt x 208.75056pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+</home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_17VAL_18TYR.pdf, id=6, 722.7pt x 433.62pt>
 File: /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_17VAL_18TYR.pdf Graphic file (type pdf)
  <use /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_17VAL_18TYR.pdf>
-Package pdftex.def Info: /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_17VAL_18TYR.pdf used on input line 64.
+Package pdftex.def Info: /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_17VAL_18TYR.pdf used on input line 102.
 (pdftex.def)             Requested size: 347.92163pt x 208.75056pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-</home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_20PHE_21ASN_22HIS_23ILE_24THR.pdf, id=9, 722.7pt x 433.62pt>
+</home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_20PHE_21ASN_22HIS_23ILE_24THR.pdf, id=7, 722.7pt x 433.62pt>
 File: /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_20PHE_21ASN_22HIS_23ILE_24THR.pdf Graphic file (type pdf)
  <use /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_20PHE_21ASN_22HIS_23ILE_24THR.pdf>
-Package pdftex.def Info: /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_20PHE_21ASN_22HIS_23ILE_24THR.pdf used on input line 71.
+Package pdftex.def Info: /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_20PHE_21ASN_22HIS_23ILE_24THR.pdf used on input line 110.
 (pdftex.def)             Requested size: 347.92163pt x 208.75056pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-</home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_28GLN_29TRP_30GLU_31ARG_32PRO_33SER_34GLY.pdf, id=10, 722.7pt x 433.62pt>
+</home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_25ASN_26ALA_27SER.pdf, id=8, 722.7pt x 433.62pt>
+File: /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_25ASN_26ALA_27SER.pdf Graphic file (type pdf)
+ <use /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_25ASN_26ALA_27SER.pdf>
+Package pdftex.def Info: /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_25ASN_26ALA_27SER.pdf used on input line 117.
+(pdftex.def)             Requested size: 347.92163pt x 208.75056pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+</home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_28GLN_29TRP_30GLU_31ARG_32PRO_33SER_34GLY.pdf, id=9, 722.7pt x 433.62pt>
 File: /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_28GLN_29TRP_30GLU_31ARG_32PRO_33SER_34GLY.pdf Graphic file (type pdf)
  <use /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_28GLN_29TRP_30GLU_31ARG_32PRO_33SER_34GLY.pdf>
-Package pdftex.def Info: /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_28GLN_29TRP_30GLU_31ARG_32PRO_33SER_34GLY.pdf used on input line 79.
-(pdftex.def)             Requested size: 347.92163pt x 208.75056pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-</home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_9ARG_10MET_11SER_12ARG.pdf, id=11, 722.7pt x 433.62pt>
-File: /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_9ARG_10MET_11SER_12ARG.pdf Graphic file (type pdf)
- <use /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_9ARG_10MET_11SER_12ARG.pdf>
-Package pdftex.def Info: /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_9ARG_10MET_11SER_12ARG.pdf used on input line 86.
-(pdftex.def)             Requested size: 347.92163pt x 208.75056pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-</home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MEQ_MD_19AZU.pdf, id=12, 722.7pt x 433.62pt>
-File: /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MEQ_MD_19AZU.pdf Graphic file (type pdf)
- <use /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MEQ_MD_19AZU.pdf>
-Package pdftex.def Info: /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MEQ_MD_19AZU.pdf used on input line 93.
-(pdftex.def)             Requested size: 347.92163pt x 208.75056pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-</home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MEQ_MD_17VAL_18TYR.pdf, id=13, 722.7pt x 433.62pt>
-File: /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MEQ_MD_17VAL_18TYR.pdf Graphic file (type pdf)
- <use /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MEQ_MD_17VAL_18TYR.pdf>
-Package pdftex.def Info: /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MEQ_MD_17VAL_18TYR.pdf used on input line 100.
-(pdftex.def)             Requested size: 347.92163pt x 208.75056pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-</home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MEQ_MD_20PHE_21ASN_22HIS_23ILE_24THR.pdf, id=14, 722.7pt x 433.62pt>
-File: /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MEQ_MD_20PHE_21ASN_22HIS_23ILE_24THR.pdf Graphic file (type pdf)
- <use /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MEQ_MD_20PHE_21ASN_22HIS_23ILE_24THR.pdf>
-Package pdftex.def Info: /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MEQ_MD_20PHE_21ASN_22HIS_23ILE_24THR.pdf used on input line 107.
-(pdftex.def)             Requested size: 347.92163pt x 208.75056pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-</home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MEQ_MD_9ARG_10MET_11SER_12ARG.pdf, id=15, 722.7pt x 433.62pt>
-File: /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MEQ_MD_9ARG_10MET_11SER_12ARG.pdf Graphic file (type pdf)
- <use /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MEQ_MD_9ARG_10MET_11SER_12ARG.pdf>
-Package pdftex.def Info: /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MEQ_MD_9ARG_10MET_11SER_12ARG.pdf used on input line 113.
-(pdftex.def)             Requested size: 347.92163pt x 208.75056pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-</home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MEQ_MD_28GLN_29TRP_30GLU_31ARG_32PRO_33SER_34GLY.pdf, id=16, 722.7pt x 433.62pt>
-File: /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MEQ_MD_28GLN_29TRP_30GLU_31ARG_32PRO_33SER_34GLY.pdf Graphic file (type pdf)
- <use /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MEQ_MD_28GLN_29TRP_30GLU_31ARG_32PRO_33SER_34GLY.pdf>
-Package pdftex.def Info: /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MEQ_MD_28GLN_29TRP_30GLU_31ARG_32PRO_33SER_34GLY.pdf used on input line 120.
+Package pdftex.def Info: /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_28GLN_29TRP_30GLU_31ARG_32PRO_33SER_34GLY.pdf used on input line 127.
 (pdftex.def)             Requested size: 347.92163pt x 208.75056pt.
 
 
@@ -1376,38 +1332,32 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/thiele/Documents/Physik/HiWi/WW/Plots/WW_snapshot2.png>] [2 </home/thiele/Documents/Physik/HiWi/WW/Plots/polar_rates_structure.pdf> </home/thiele/Documents/Physik/HiWi/WW/Plots/bonded_rates_matrix.pdf
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 </home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_19AZU.pdf> </home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_7GLU_8AHA_9ARG.pdf
 
-pdfTeX warning: pdflatex (file /home/thiele/Documents/Physik/HiWi/WW/Plots/bonded_rates_matrix.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] [3 </home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_19AZU.pdf> </home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_17VAL_18TYR.pdf
+pdfTeX warning: pdflatex (file /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_7GLU_8AHA_9ARG.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] [3 </home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_17VAL_18TYR.pdf> </home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_20PHE_21ASN_22HIS_23ILE_24THR.pdf
 
-pdfTeX warning: pdflatex (file /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_17VAL_18TYR.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] [4 </home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_20PHE_21ASN_22HIS_23ILE_24THR.pdf> </home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_28GLN_29TRP_30GLU_31ARG_32PRO_33SER_34GLY.pdf
+pdfTeX warning: pdflatex (file /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_20PHE_21ASN_22HIS_23ILE_24THR.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] [4 </home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_25ASN_26ALA_27SER.pdf> </home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_28GLN_29TRP_30GLU_31ARG_32PRO_33SER_34GLY.pdf
 
 pdfTeX warning: pdflatex (file /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_28GLN_29TRP_30GLU_31ARG_32PRO_33SER_34GLY.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] [5 </home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_9ARG_10MET_11SER_12ARG.pdf> </home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MEQ_MD_19AZU.pdf
+>] (./summary.bbl) [5
 
-pdfTeX warning: pdflatex (file /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MEQ_MD_19AZU.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] [6 </home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MEQ_MD_17VAL_18TYR.pdf> </home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MEQ_MD_20PHE_21ASN_22HIS_23ILE_24THR.pdf
 
-pdfTeX warning: pdflatex (file /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MEQ_MD_20PHE_21ASN_22HIS_23ILE_24THR.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> </home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MEQ_MD_9ARG_10MET_11SER_12ARG.pdf
-
-pdfTeX warning: pdflatex (file /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MEQ_MD_9ARG_10MET_11SER_12ARG.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] [7 </home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MEQ_MD_28GLN_29TRP_30GLU_31ARG_32PRO_33SER_34GLY.pdf>] (./summary.aux) ) 
+] (./summary.aux) ) 
 Here is how much of TeX's memory you used:
- 27425 strings out of 493054
- 546228 string characters out of 6140585
- 548424 words of memory out of 5000000
- 30497 multiletter control sequences out of 15000+600000
- 35049 words of font info for 41 fonts, out of 8000000 for 9000
+ 27399 strings out of 493054
+ 543623 string characters out of 6140585
+ 551178 words of memory out of 5000000
+ 30474 multiletter control sequences out of 15000+600000
+ 44057 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,6n,67p,10379b,541s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb>
-Output written on summary.pdf (7 pages, 1313442 bytes).
+ 62i,6n,67p,10379b,539s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb>
+Output written on summary.pdf (5 pages, 784388 bytes).
 PDF statistics:
- 260 PDF objects out of 1000 (max. 8388607)
- 223 compressed objects within 3 object streams
+ 182 PDF objects out of 1000 (max. 8388607)
+ 154 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 78 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 43 words of extra memory for PDF output out of 10000 (max. 10000000)
 
