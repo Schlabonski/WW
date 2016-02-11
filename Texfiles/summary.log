@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.12.29)  11 FEB 2016 16:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.12.29)  11 FEB 2016 17:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1294,10 +1294,10 @@ Package pdftex.def Info: /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_7G
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-</home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_17VAL_18TYR.pdf, id=6, 722.7pt x 433.62pt>
-File: /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_17VAL_18TYR.pdf Graphic file (type pdf)
- <use /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_17VAL_18TYR.pdf>
-Package pdftex.def Info: /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_17VAL_18TYR.pdf used on input line 102.
+</home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_14SER_15GLY_16ARG_17VAL_18TYR.pdf, id=6, 722.7pt x 433.62pt>
+File: /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_14SER_15GLY_16ARG_17VAL_18TYR.pdf Graphic file (type pdf)
+ <use /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_14SER_15GLY_16ARG_17VAL_18TYR.pdf>
+Package pdftex.def Info: /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_14SER_15GLY_16ARG_17VAL_18TYR.pdf used on input line 102.
 (pdftex.def)             Requested size: 347.92163pt x 208.75056pt.
 
 
@@ -1335,7 +1335,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 </home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_19AZU.pdf> </home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_7GLU_8AHA_9ARG.pdf
 
 pdfTeX warning: pdflatex (file /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_7GLU_8AHA_9ARG.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] [3 </home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_17VAL_18TYR.pdf> </home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_20PHE_21ASN_22HIS_23ILE_24THR.pdf
+>] [3 </home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_14SER_15GLY_16ARG_17VAL_18TYR.pdf> </home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_20PHE_21ASN_22HIS_23ILE_24THR.pdf
 
 pdfTeX warning: pdflatex (file /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_20PHE_21ASN_22HIS_23ILE_24THR.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >] [4 </home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_25ASN_26ALA_27SER.pdf> </home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin_MD_28GLN_29TRP_30GLU_31ARG_32PRO_33SER_34GLY.pdf
@@ -1347,14 +1347,14 @@ pdfTeX warning: pdflatex (file /home/thiele/Documents/Physik/HiWi/WW/Plots/E_kin
 ] (./summary.aux) ) 
 Here is how much of TeX's memory you used:
  27399 strings out of 493054
- 543623 string characters out of 6140585
+ 543713 string characters out of 6140585
  551178 words of memory out of 5000000
  30474 multiletter control sequences out of 15000+600000
  44057 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,6n,67p,10379b,539s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb>
-Output written on summary.pdf (5 pages, 784388 bytes).
+Output written on summary.pdf (5 pages, 870941 bytes).
 PDF statistics:
  182 PDF objects out of 1000 (max. 8388607)
  154 compressed objects within 2 object streams
