@@ -1,5 +1,8 @@
+# we don't need no big data masses
 *.xtc
-*.xvg
+*.xvg*
 *.trr
 *.trj
 *.pyc
+*.npy
+*.h5
