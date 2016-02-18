@@ -6,3 +6,11 @@
 *.pyc
 *.npy
 *.h5
+
+# we dont't need no tex trash
+*.blg
+*.bbl
+*.fdb_latexmk
+*.log
+*.fls
+*.aux
