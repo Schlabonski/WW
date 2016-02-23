@@ -18,11 +18,17 @@ g++ rate_est_H2O_fab.cpp -o ../bin/rate_est_H2O_fab -lboost_program_options -lm 
 
 /*TODO:
  * - replace the occurences of residue 15 with heater residue 19
+ * - deal with refferences to neighbours of the heater, currently their initial
+ *   energies are fitted as well
  * - rewrite function for the calculation of rates so that polar rates are calculated as well
  * - replace individual fitting of rates by fitting with only two diffusion constants for polar and 
  *   backbone contacts
+ * - add a routine that fits the decay rate of the higher modes of the heater
  * - which input is no longer needed? which input has to be added?
  * - currently commented/read until L166
+ * - delete all occurences of the shifted time of beginning the fit which is
+ *   200fs of 0.2 in internal units, this starting time is sometimes put in
+ *   numerically, sometimes referred to as tstart/startt
 */
 
 namespace po = boost::program_options;
@@ -44,7 +50,7 @@ void trj_calc(vector<vector<float>> &tr, vector<vector<float>> &k, vector<vector
               sum+=-(k[j][n])*tr[i-1][j+1]+(k[n][j])*tr[i-1][n+1];
             }
           }
-        sum-=(k[nrr][nrr])*tr[i-1][j+1]-(k[nrr+1][nrr+1])*(403.29+211.95-rt[startt+i][nrr+1]); //solvent energy, and solvent energy at initial fitting time
+        sum-=(k[nrr][nrr])*tr[i-1][j+1]-(k[nrr+1][nrr+1])*(403.29+211.95-rt[startt+i][nrr+1]); // TODO: solvent energy, and solvent energy at initial fitting time
         tr[i][j+1]=sum;
       }
   }
@@ -181,6 +187,9 @@ int main(int ac, char* av[])
     vector < vector <float> > k (nres+2, vector<float>(nres+2,0));
     ratf >> temp >> split >> k0 >> start15 >> start17 >> k[nres][nres] >> k[nres+1][nres+1]; //last diviation between ref and model, k0 for the backbone, neighboring res of heater start values, solvent loss and backrate
     //reading first estimates for the contact transport
+    //TODO: - these are only estimates for every single rate?
+    //     ---> we don't need them?
+    //      - instead read in diffusion constants backbone/polar
     for(n=0;n<nrcontsI;n++){
       ratf >> i >> j >> temp;
       if(ratf.eof()){
@@ -202,7 +211,7 @@ int main(int ac, char* av[])
       exit(EXIT_FAILURE);
     }
     //here we start calculating the rate matrix
-    //TODO: add calculation of polar contact rates! 
+    //TODO: - add calculation of polar contact rates! 
     while(true){
       dxf >> i >> j >> temp;
       if(dxf.eof()) break;
@@ -222,11 +231,11 @@ int main(int ac, char* av[])
     while(true){//reading ref. trajectory
       fnf >> temp;
       if(fnf.eof()) break;
-      vector <float> newColumn (cols+1);
+      vector <float> newColumn (cols+1); //size is cols+1 for splitted heater
       newColumn[0]=temp;
       for(i=0;i<nres+1;i++){
         fnf >> temp;
-        if(i==15){
+        if(i==15){ //split energies of heater in two 
           newColumn[i+1]=temp*split;
           newColumn[i+2]=temp*(1-split);
           i++;
@@ -235,14 +244,14 @@ int main(int ac, char* av[])
           newColumn[i+1]=temp;
         }
       }
-      reft.push_back(newColumn);
+      reft.push_back(newColumn);//push energy trajectory to reference trajectory
     }
     
     //cout << reft[0][16] << "  " << reft[0][17] << "\n";
 
     int refsteps = reft.size();
-    int tsteps = int((t-0.2)/(0.002))+1;//number of fitting steps 
-    int tstart = int((0.2-0.1)/0.002);//start index for fitting
+    int tsteps = int((t-0.2)/(0.002))+1;//number of fitting steps TODO: shifted time 
+    int tstart = int((0.2-0.1)/0.002);//start index for fitting TODO: shifted time
 
 
     vector <vector<float>> trj (tsteps, vector<float> (cols,0));
@@ -268,29 +277,45 @@ int main(int ac, char* av[])
     float prev_k;
     int q=0,o=0;
 
-    trj[0][15]=start15; 
+    trj[0][15]=start15; // TODO: we don't need this twice, right?
 
     // the main fit routine starts here
-    for(n=0;n<nr_times;n++){
-      tsteps = int((times[n]-0.2)/(0.002))+1;
+    for(n=0;n<nr_times;n++){//this loop is useless at the moment, only needed if fit uses different time windows
+      tsteps = int((times[n]-0.2)/(0.002))+1;//TODO: shifted time
       trj.resize(tsteps, vector<float> (cols,0));
       for(i=0;i<cols;i++){
         trj[0][i]=reft[tstart][i];
       }
+      
+      /* start15/17 where read in sepearatly earlier, as we start fitting right
+       * at the beginning, we can probably just take their initial values of the
+       * MD trajectory. Furthermore, no direct influence due to T jump mechanism
+       * like in Villin...
+       */
       trj[0][15]=start15;
       trj[0][18]=start17;
       trj_calc(trj, k, reft, nres,tsteps, tstart);
       var_calc(trj, reft, tstart, tsteps, cols, prev_var);
-      for(i=0;i<nr_dka;i++){
+      for(i=0;i<nr_dka;i++){// this loop is also only needed if stepsize of fit is to be varied during routine
         for(j=0;j<nr_limits;j++){
-          m=0;
-          ++o;
+          m=0; // m indicates in which level of the backtracking fit we are currently
+          ++o; // TODO: what does this do?
           while(1){
-            si=1.;
+            si=1.; // to we vary the corresponding parameter to positive or negative direction?
             count=0;
             while(1){
-              if(m>=nrcontsI){//fit of solvent back rate
-                if(m==nrcontsI+5){
+              if(m>=nrcontsI){
+                /*TODO: in our case all rates, polar and bonded, are fitted at
+                 * the same time, using only diffusion constants for each. So
+                 * the maximal value of m will become 7 if we fit initial values
+                 * of the heaters neighbours or 5 if not. Remaining parameters
+                 * will be solvent back, solvent loss, splitting, heater decay
+                 * rate, diffusion bonded and diffusion polar
+                 *   - add heater decay rate fit
+                 *   - add diffusion bonded/polar fit
+                 *   - delete individual fit of rates
+                 */
+                if(m==nrcontsI+5){//fit of solvent back rate
                   prev_k=k[nres+1][nres+1];
                   k[nres+1][nres+1]+=si*k[nres+1][nres+1]*dka[i];
                 }
@@ -315,18 +340,21 @@ int main(int ac, char* av[])
                   if(split<=1.){
                     #pragma omp parallel for private(n) shared(reft,refsteps)
                     for(n=0;n<refsteps;n++){
-                      reft[n][16]=(reft[n][16]+reft[n][17])*split;
+                      reft[n][16]=(reft[n][16]+reft[n][17])*split; //why do we compute this, we don't use it in the calculation of the variance anyways?
                       reft[n][17]=(reft[n][16]+reft[n][17])*(1-split);
                     }
                     trj[0][16]=reft[tstart][16];
                     trj[0][17]=reft[tstart][17];
                   }
-                  else{
+                  else{// case of split>1 is unphysical
                     split=prev_k;
                   }
                 }
               }
-              else{//fit of the contact rates
+              // TODO: the following individual fitting of rates can be replaced
+              // by three blocks of fitting diffusion of polar, bonded and
+              // heater decay rate (decay rate of higher modes)
+              else{//fit of the contact rates, here m indicates the current residue
                   prev_k=k[ind[m][0]-1][ind[m][1]-1];
                   k[ind[m][0]-1][ind[m][1]-1]+=si*k[ind[m][0]-1][ind[m][1]-1]*dka[i];
                   //cout << m << "  " << prev_k << " " << k[ind[m][0]-1][ind[m][1]-1] << endl;
@@ -345,7 +373,10 @@ int main(int ac, char* av[])
               }
               trj_calc(trj, k, reft, nres,tsteps,tstart);
               var_calc(trj, reft, tstart, tsteps, cols, var);
-              //resetting the rates if the fit got worse
+              //resetting the rates if the fit got worse, prev_k historically
+              //means the value before variation. 
+              //TODO: add corresponding reset blocks for the newly introduced
+              //fitting parameters
                 if(prev_var<var){
                   if(m>=nrcontsI){
                     if(m==nrcontsI+5){
@@ -363,7 +394,7 @@ int main(int ac, char* av[])
 
 
                     if(m==nrcontsI+1){
-                      split-=si*split*dka[i];
+                      split-=si*split*dka[i]; // TODO: why so complicated? set prev_k = split earlier will easen the deal
                       #pragma omp parallel for private(n) shared(reft,refsteps)
                       for(n=0;n<refsteps;n++){
                         reft[n][16]=(reft[n][16]+reft[n][17])*split;
@@ -373,13 +404,13 @@ int main(int ac, char* av[])
                       trj[0][17]=reft[tstart][17];
                     }
                   }
-                  else{
+                  else{// this is the resetting of individual rates
                       k[ind[m][0]-1][ind[m][1]-1]=prev_k;
                       if(ind[m][0]!=16 && ind[m][0]!=17 && ind[m][1]!=16 && ind[m][1]!=17){
                         k[ind[m][1]-1][ind[m][0]-1]=prev_k*dofa[ind[m][0]-1]/dofa[ind[m][1]-1];
                       }
                   }
-                  if(count==0){
+                  if(count==0){// TODO: what role does count play?
                     si=-1.;
                   }
                   else{
@@ -393,13 +424,13 @@ int main(int ac, char* av[])
                   sw++;
                   if((prev_var-var)<prev_var*limits[j] || count>10){
                     prev_var=var;
-                    break;
+                    break; 
                   }
                   prev_var=var;
                 }
                 count++;
             }
-            m++;
+            m++; // go on to next parameter
             if(m==nrcontsI+7){
               if(sw>0){
                 m=0;
@@ -414,15 +445,15 @@ int main(int ac, char* av[])
           }
           m=0;
           sw=0;
-          if(prev_var<0.01){
+          if(prev_var<0.01){ //breaking loop over number of exactitude limits
             break;
           }
         }
-        if(prev_var<0.01){
+        if(prev_var<0.01){ // breaking loop over stepsizes 
           break;
         }
       }
-      if(prev_var<0.01){
+      if(prev_var<0.01){// this is the breaking criterion for the loop over time windows
         break; 
       }
     }
@@ -438,12 +469,13 @@ int main(int ac, char* av[])
 
     trj_calc(trj, k, reft, nres,tsteps,tstart);
     
+    // write resulting trajectory for optimized parameters to file tout   
     for(i=0;i<tsteps;i++){
       tout << trj[i][0];
       for(j=1;j<cols;j++){
         tout <<"  " << trj[i][j];
       }
-      tout << "\n";  
+      tout << "\n";  za
     }
 
     tout.close();
