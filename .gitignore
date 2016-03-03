@@ -7,10 +7,20 @@
 *.npy
 *.h5
 
-# we dont't need no tex trash
+# pictures and plots use a lot of space as well
+*.png
+*.tga
+*.pdf
+!Presentation_WW.pdf
+
+# we dont't need no latex trash
 *.blg
 *.bbl
 *.fdb_latexmk
 *.log
 *.fls
 *.aux
+*.nav
+*.out
+*.snm
+*.toc

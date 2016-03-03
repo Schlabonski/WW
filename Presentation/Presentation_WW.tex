@@ -1,0 +1,51 @@
+\documentclass[english]{beamer}
+\uselanguage{english}
+
+\usepackage[width=0.8cm, height=1.2cm]{ufcd}
+\usepackage{textpos}
+
+\mode<presentation>
+{
+  \setbeamercovered{invisible}
+}
+
+\AtBeginSection[]
+{
+\begin{frame}<beamer>{Table of contents}
+    \tableofcontents[currentsection,currentsubsection]
+\end{frame}
+}
+
+\newcommand{\backupbegin}{
+   \newcounter{framenumberappendix}
+   \setcounter{framenumberappendix}{\value{framenumber}}
+}
+
+\newcommand{\backupend}{
+  \addtocounter{framenumberappendix}{-\value{framenumber}}
+  \addtocounter{framenumber}{\value{framenumberappendix}} 
+}
+
+\title[VET in WW]{What did the Hiwi do besides making coffee?}
+\subtitle{Vibrational energy transport in the WW loop}
+\author[F.~Thielemann]{Fabian~Thielemann}
+\institute{Institute of Physics\\Department of Biomolecular Dynamics}
+
+\graphicspath{{/home/thiele/HiWi_WW/Plots/}}
+
+\begin{document}
+  \begin{frame}[t]
+    \titlepage
+  \end{frame}
+
+  \include{target_system}
+  \include{simulation}
+  \include{md_results}
+  \include{rate_model}
+  \include{conclusion}
+  \include{outlook}
+  %\appendix
+  %\backupbegin
+  \include{bibliography}
+  %\backupend
+\end{document}
