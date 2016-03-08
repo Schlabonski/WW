@@ -79,6 +79,7 @@ each, using a timestep of 0.2\,fs. The time evolution of the kinetic energy of
 all residues was averaged over all 200 trajectories and is shown in the plots
 below.  
 
+\section{Results in total kinetic energiy}
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.8\linewidth]{E_kin_MD_19AZU.pdf}
@@ -115,7 +116,7 @@ than that of the direct neighbour of AZU 18 TYR. The energies are normalized to 
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.8\linewidth]{E_kin_MD_25ASN_26ALA_27SER.pdf}
-  \caption{Kinetic energies of residues 25 ASN, 26 ALA and 27 SER. The energy
+  \caption{Kinetic energy of residues 25 ASN, 26 ALA and 27 SER. The energy
   dose for 26 ALA, which is a possible thermometer position, is one order of
 magnitude smaller than the energy rise of 8 AHA. The energies are normalized to
 the value at $t=0$.}
@@ -125,11 +126,63 @@ the value at $t=0$.}
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.8\linewidth]{E_kin_MD_28GLN_29TRP_30GLU_31ARG_32PRO_33SER_34GLY.pdf}
-  \caption{Kinetic energy of residues 28 and 29, of which 28 is in polar contact
+  \caption{Kinetic energy of residues 28 till end, of which 28 is in polar contact
   with 19 AZU. The energies are normalized to the value at $t=0$.}
   \label{fig:E_kin_MD_28GLN_29TRP_30GLU_31ARG_32PRO_33SER_34GLY}
 \end{figure}
 
+\section{Results in kinetic energy per dof}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\linewidth]{E_kin_MD_dof_19AZU.pdf}
+  \caption{Kinetic energy per dof of the heated residuum AZU 19. The characteristic time
+    of decay between 0.2\,ps and 40\,ps obtained from fitting is $\tau_{AZU}
+  \approx$ 10\,ps.}
+  \label{fig:E_kin_MD_dof_19}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\linewidth]{E_kin_MD_dof_7GLU_8AHA_9ARG.pdf}
+  \caption{Kinetic energy per dof of residues 7 GLU, 9 ARG and the possible thermometer
+  8 AHA. The maximum rise in the kinetic energy of 8 AHA is around three times smaller
+than that of the direct neighbour of AZU 18 TYR. The energies are normalized to the value at $t=0$. }
+  \label{fig:E_kin_MEQ_9ARG_10MET_11SER_12ARG}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\linewidth]{E_kin_MD_dof_14SER_15GLY_16ARG_17VAL_18TYR.pdf}
+  \caption{Kinetic energy per dof of downstream residues 14 to 18. The energies are
+  normalized to the value at $t=0$.}
+  \label{fig:E_kin_MD_dof_15_16_17_18}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\linewidth]{E_kin_MD_dof_20PHE_21ASN_22HIS_23ILE_24THR.pdf}
+  \caption{Kinetic energy per dof of upstream residues 20 to 24.The energies are normalized to the value at $t=0$.}
+  \label{fig:E_kin_MD_dof_20_21_22_23}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\linewidth]{E_kin_MD_dof_25ASN_26ALA_27SER.pdf}
+  \caption{Kinetic energy per dof of residues 25 ASN, 26 ALA and 27 SER. The energy
+  dose for 26 ALA, which is a possible thermometer position, is one order of
+magnitude smaller than the energy rise of 8 AHA. The energies are normalized to
+the value at $t=0$.}
+  \label{fig:name}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\linewidth]{E_kin_MD_dof_28GLN_29TRP_30GLU_31ARG_32PRO_33SER.pdf}
+  \caption{Kinetic energy per dof of residues 28 till end, of which 28 is in polar contact
+  with 19 AZU. The energies are normalized to the value at $t=0$.}
+  \label{fig:E_kin_MD_dof_28GLN_29TRP_30GLU_31ARG_32PRO_33SER_34GLY}
+\end{figure}
 \clearpage
 
 \bibliography{md,stock,own}{}

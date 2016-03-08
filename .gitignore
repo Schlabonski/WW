@@ -24,3 +24,6 @@
 *.out
 *.snm
 *.toc
+
+# we dont need no... whatever useless stuff!
+*.swp
